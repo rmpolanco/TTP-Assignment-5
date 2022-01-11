@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TTP Assignment 5</title>
+    <script src="script.js" async></script>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div id="topsection">
+        <h1>My Grid Paint Tool</h1>
+        <button onclick="addRow()">Add Row</button>
+        <button onclick="addColumn()">Add Column</button>
+        <button onclick="add32()">Add 32x32</button>
+        <button onclick="removeRow()">Remove Row</button>
+        <button onclick="removeColumn()">Remove Column</button>
+        <button onclick="removeAll()">Remove All</button>
+        <br>
+        <button onclick="fillUncolored()">Fill Uncolored</button>
+        <button onclick="fillAll()">Fill All</button>
+        <button onclick="clearAll()">Clear All</button>
+        <br>
+        <br>
+        <label for="colorlist">Choose a color:</label>
+        <select id="colorlist" name="colorlist">
+            <option value="transparent">Clear</option>
+            <option value="white">White</option>
+            <option value="black"style="background-color:black;color:white">Black</option>
+            <option value="gray"style="background-color:gray">Gray</option>
+            <option value="blue"style="background-color:blue;color:white">Blue</option>
+            <option value="purple"style="background-color:purple;color:white">Purple</option>
+            <option value="red"style="background-color:red">Red</option>
+            <option value="orange"style="background-color:orange">Orange</option>
+            <option value="yellow"style="background-color:yellow">Yellow</option>
+            <option value="green"style="background-color:green;color:white">Green</option>
+            <option value="cyan"style="background-color:cyan">Cyan</option>
+            <option value="pink"style="background-color:pink">Pink</option>
+            <option value="teal"style="background-color:teal;color:white">Teal</option>
+            <option value="brown"style="background-color:brown;color:white">Brown</option>
+            <option value="indigo"style="background-color:indigo;color:white">Indigo</option>
+            <option value="tan" style="background-color:tan">Tan</option>
+        </select>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div id="grid">
+        <div class="col">
+            <div class="square">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
